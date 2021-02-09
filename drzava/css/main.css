@@ -73,7 +73,7 @@ h3 {
     padding: 0 0 24px;
 }
 
-.header-image {
+.header-image, .map-image {
     position: relative;
     overflow: hidden;
     padding-top: 40px;
@@ -81,12 +81,19 @@ h3 {
 }
 .header-image .row {
     position: relative;
+    min-height: 36vw;
+    z-index: 10;
+    color: #FFF;
+}
+
+.map-image .row {
+    position: relative;
     min-height: 48vw;
     z-index: 10;
     color: #FFF;
 }
 
-.header-image figure:after {
+.header-image figure:after, .map-image figure:after {
     display: block;
     position: absolute;
     width: 100%;
@@ -98,7 +105,7 @@ h3 {
 }
 
 .header-image > figure,
-    .header-image > figure img {
+    .header-image > figure img, .map-image > figure, .map-image > figure img  {
     display: block;
     position: absolute;
     width: 100%;
@@ -107,6 +114,11 @@ h3 {
     left: 0;
 }
 .header-image > figure img {
+    object-fit: cover;
+    object-position: 50% 50%;
+}
+
+.map-image > figure img {
     object-fit: contain;
     object-position: 50% 50%;
 }
@@ -182,29 +194,29 @@ h3 {
     box-shadow: none !important;
 }
 .vojvodina {
-    top: 60%;
-    left: 215px;
+    top: 3%;
+    left: 37.5%;
     position: absolute;
 }
 .belgrade {
     position: absolute;
-    top: 53%;
-    left: 36%;
+    top: 26%;
+    left: 42.5%;
 }
 .se-serbia {
     position: absolute;
-    top: 7%;
+    top: 56%;
     right: 36.5%;
 }
 .sw-serbia {
-    top: 47%;
-    right: 42%;
+    top: 41.4%;
+    left: 44.5%;
     position: absolute;
 }
 .kosovo {
     position: absolute;
-    top: 39%;
-    right: 20%;
+    top: 77%;
+    right: 47%;
 }
 @media screen and (min-width: 576px){
     .modal-dialog {
@@ -218,4 +230,8 @@ h3 {
 .modal-body {
     padding-left: 60px !important;
     padding-right: 60px !important;
+}
+.about-title {
+    width: 100%;
+    margin-top: 72px;
 }
