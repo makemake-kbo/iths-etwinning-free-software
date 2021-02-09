@@ -171,7 +171,7 @@ h3 {
         margin-bottom: -16px;
     }
     .intro-section p {
-        max-width: 600px;
+        max-width: 510px;
         margin: 0 auto;
     }
 }
@@ -226,6 +226,9 @@ h3 {
 }
 .modal-header {
     padding-left: 60px !important;
+}
+h2.ns {
+    margin-top: 8px;
 }
 .modal-body {
     padding-left: 60px !important;
