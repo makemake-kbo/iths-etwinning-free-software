@@ -1,0 +1,75 @@
+/*Fonts*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+/*global parameters*/
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  width:100%;
+  height:100%;
+  margin:0;
+  padding:0;
+}
+
+.header-image {
+    position: relative;
+    overflow: hidden;
+    padding-top: 40px;
+    padding-bottom: 50px;
+}
+.header-image .row {
+    position: relative;
+    min-height: 36vw;
+    z-index: 10;
+    color: #FFF;
+}
+
+.header-image figure:after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    content: "";
+    background: rgba(0,0,0,0.4);
+}
+
+.header-image > figure,
+    .header-image > figure img {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.header-image > figure img {
+    object-fit: cover;
+    object-position: 50% 50%;
+}
+.iths-logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    height: auto;
+}
+.iths-logo:first-child {
+    margin-bottom: 60px;
+}
+.iths-logo:last-child {
+    margin-top: 60px;
+}
+.logo-and-text {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.intro-hr {
+    border-top:1px solid black;
+}
