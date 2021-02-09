@@ -49,6 +49,7 @@ h6 {
 p {
     line-height: 1.5;
     padding-bottom: 24px;
+    margin-bottom: 0 !important;
 }
 
 h1,h2,h3 {
@@ -80,7 +81,7 @@ h3 {
 }
 .header-image .row {
     position: relative;
-    min-height: 36vw;
+    min-height: 48vw;
     z-index: 10;
     color: #FFF;
 }
@@ -106,7 +107,7 @@ h3 {
     left: 0;
 }
 .header-image > figure img {
-    object-fit: cover;
+    object-fit: contain;
     object-position: 50% 50%;
 }
 .iths-logo {
@@ -166,4 +167,55 @@ h3 {
 .title {
     padding-top: 48px;
     padding-bottom: 33px;
+}
+.btn {
+  background-color: transparent;
+  border: none;
+  color: black;
+  cursor: pointer;
+  outline: none;
+}
+.fa-map-marker:before {
+    font-size: 50px;
+}
+.btn:focus {
+    box-shadow: none !important;
+}
+.vojvodina {
+    top: 60%;
+    left: 215px;
+    position: absolute;
+}
+.belgrade {
+    position: absolute;
+    top: 53%;
+    left: 36%;
+}
+.se-serbia {
+    position: absolute;
+    top: 7%;
+    right: 36.5%;
+}
+.sw-serbia {
+    top: 47%;
+    right: 42%;
+    position: absolute;
+}
+.kosovo {
+    position: absolute;
+    top: 39%;
+    right: 20%;
+}
+@media screen and (min-width: 576px){
+    .modal-dialog {
+        max-width: 800px !important;
+        margin: 1.75rem auto;
+    }
+}
+.modal-header {
+    padding-left: 60px !important;
+}
+.modal-body {
+    padding-left: 60px !important;
+    padding-right: 60px !important;
 }
