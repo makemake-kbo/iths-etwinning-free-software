@@ -238,3 +238,9 @@ h2.ns {
     width: 100%;
     margin-top: 72px;
 }
+.header-text a {
+    color: #212529;
+}
+.header-text a:hover {
+    color: #212529;
+}
