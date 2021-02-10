@@ -244,3 +244,6 @@ h2.ns {
 .header-text a:hover {
     color: #212529;
 }
+.about-text p {
+    text-align: justify;
+}
