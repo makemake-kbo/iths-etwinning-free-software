@@ -1,0 +1,22 @@
+@media only screen and (max-width: 750px) {
+    *{
+        padding: 0%;
+        margin: 0%;
+    }
+    
+    nav{
+        flex-direction: column;
+    }
+
+    nav div{
+        width: 100%;
+    }
+
+    nav div img{
+        width: 100%;
+    }
+
+    nav div:hover{
+        width: 120%;
+    }
+}
